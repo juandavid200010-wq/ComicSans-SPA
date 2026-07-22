@@ -19,11 +19,12 @@
             <button class="close-btn" aria-label="Cerrar menú">✕</button>
             </div>
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="/" data-link></a></li>
+                <li><a href="/home" data-link>Home</a></li>
                 <hr>
-                <li><a href="#">About</a></li>
+                <li><a href="/about" data-link>About</a></li>
                 <hr>
-                <li><a href="#">Chat</a></li>
+                <li><a href="/chat" data-link>Chat</a></li>
                 <hr>
             </ul>
         </nav>
@@ -32,7 +33,7 @@
         <section>
             <h2>Bienvenido a Hero AI</h2>
             <p>Explora un mundo donde la inteligencia artificial da vida a tus superhéroes favoritos.</p>
-            <video autoplay muted loop playsinline> <source src="../videos/Marvel-Opening.mp4" 
+            <video class="video-marvel-inico" autoplay muted loop playsinline> <source src="../videos/Marvel-Opening.mp4" 
                 type="video/mp4">Tu navegador no soporta el video.
         </video>
         </section>
@@ -44,9 +45,9 @@
         </p>
         <h2>¿Qué puedes hacer? </h2>
         <ul>
-            <li>Conversar Habla con un superhéroe.</li>
-            <li>Inteligencia Artificial Obtén respuestas naturales.</li>
-            <li>Elige un héroe Vive una experiencia única.</li>
+            <li>Conversar, Habla con un superhéroe.</li>
+            <li>Inteligencia Artificial, Obtén respuestas naturales.</li>
+            <li>Elige un héroe, Vive una experiencia única.</li>
         </ul>
         </section>
         <button class="start-btn" onclick="window.location.href='chat.html'">Comenzar</button>
