@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="icon" type="image/png" href="../imagenes/pngwing.com.png">
+    <link rel="stylesheet" href="../styles/reset.css">
+</head>
+<body>
+    <header>
+        <h1>Hero</h1>
+        <img class="logo" src="../imagenes/pngwing.com.png" alt="Logo">
+        <button class="menu-btn" aria-label="Abrir menú">☰</button>
+        <nav>
+            <div class="menu-despegable">
+            <img class="logo-menu-despegable" src="../imagenes/pngwing.com.png" alt="Logo">
+            <button class="close-btn" aria-label="Cerrar menú">✕</button>
+            </div>
+            <ul>
+                <li><a href="/" data-link>Home</a></li>
+                <hr>
+                <li><a href="/about" data-link>About</a></li>
+                <hr>
+                <li><a href="/chat" data-link>Chat</a></li>
+                <hr>
+            </ul>
+        </nav>
+    </header>
+    <main id="app"></main>
+    <footer>
+        <p>Hero IA</p>
+        <p>La aventura comienza con una conversación.</p>
+        <p>Proyecto academico &copy; 2026 Hero AI.</p>
+    </footer>
+    <script src="./src/components/menu.js"></script>
+    <script src="../src/main.js" type="module"></script>
+
+</body>
+</html>
