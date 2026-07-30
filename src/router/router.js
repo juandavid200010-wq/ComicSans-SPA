@@ -5,6 +5,7 @@ import { renderNotFound } from "../views/notFound.js";
 
 const routes = {
     '/': renderHome,
+    '/index.html': renderHome,
     '/about': renderAbout,
     '/chat': renderChat,
 };
@@ -12,18 +13,16 @@ const routes = {
 export function router() {
     const path = window.location.pathname;
     const renderView = routes[path];
-  
-    console.log('Routing to:', path);
-
     if (renderView) {
     renderView();
     } else {
     renderNotFound();
 }
+}
+
    //* Refactoring
   // const renderView = routes[path] || renderNotFound;
   // renderView();
-}
 
 export function navigateTo(path) {
   history.pushState({}, '', path);

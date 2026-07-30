@@ -1,15 +1,16 @@
+
 export function renderHome() {
     const app = document.getElementById('app');
     app.innerHTML = `
     <section>
         <h2>Bienvenido a Hero AI</h2>
-        <p>Explora un mundo donde la inteligencia artificial da vida a tus superhéroes favoritos.</p>
-        <video class="video-marvel-inico" autoplay muted loop playsinline> <source src="../videos/Marvel-Opening.mp4" 
+        <p class = "text-home"> Explora un mundo donde la inteligencia artificial da vida a tus superhéroes favoritos.</p>
+        <video class="video-marvel-inico" autoplay muted loop playsinline> <source src="./src/assets/videos/Marvel-Opening.mp4">
             type="video/mp4">Tu navegador no soporta el video.
         </video>
         </section>
         <section>
-        <p> Explora un mundo donde la inteligencia artificial 
+        <p class = "text-home"> Explora un mundo donde la inteligencia artificial 
             da vida a tus superhéroes favoritos. Haz preguntas, recibe consejos y 
             disfruta conversaciones únicas con personajes inspirados en 
             el universo de Marvel.

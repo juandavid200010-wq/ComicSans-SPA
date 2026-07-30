@@ -1,3 +1,4 @@
+
 export function renderAbout() {
     document.querySelector('#app').innerHTML = `
     <section>   
