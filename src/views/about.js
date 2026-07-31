@@ -2,7 +2,7 @@
 export function renderAbout() {
     document.querySelector('#app').innerHTML = `
     <section>   
-        <h2>About</h2>
+        <h2 class = "tittle-about">About</h2>
         <ul>
             <li>Conversa con un superhéroe como si estuvieras frente a él.</li>
             <li>Cada respuesta es generada por inteligencia artificial.</li>

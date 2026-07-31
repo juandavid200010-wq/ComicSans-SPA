@@ -1,5 +1,7 @@
 /* Estilos para el contenido principal */
-
+.tittle{
+    padding-top: 1.5rem;
+}
 main ul {
     padding: 3rem;
     display: flex;

@@ -3,7 +3,7 @@ export function renderHome() {
     const app = document.getElementById('app');
     app.innerHTML = `
     <section>
-        <h2>Bienvenido a Hero AI</h2>
+        <h2 class = "tittle">Bienvenido a Hero AI</h2>
         <p class = "text-home"> Explora un mundo donde la inteligencia artificial da vida a tus superhéroes favoritos.</p>
         <video class="video-marvel-inico" autoplay muted loop playsinline> <source src="./src/assets/videos/Marvel-Opening.mp4">
             type="video/mp4">Tu navegador no soporta el video.

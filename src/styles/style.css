@@ -18,23 +18,18 @@ ul {
     text-align: justify;
     padding: 1.10rem;
 }
-h2 {
-    text-align: center;
-    padding-top: 1.5rem;
-}
 
 /* Estilos generales para el encabezado*/
 
 header {
     display: flex;
     align-items: center;
-    gap: 6.5rem;
-    padding: 5px;
+    justify-content: space-between;
     background-color: #ff3232;
-
+    padding: 0 25px;
 }
 .logo {
-    width: 40px;
+    width: 35px;
     height: auto;
 }
 .menu-btn {
@@ -90,8 +85,7 @@ nav ul li a {
     font-size: 1.7rem;
 }
 .logo-menu-despegable {
-    width: 50px;
-    height: auto;
+    width: 40px;
     margin: 1.5rem;
 }
 .menu-despegable {
