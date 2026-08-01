@@ -1,14 +1,35 @@
 .tittle-about{
     display: flex;
-    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
 }
-
+.name-superhero {
+    background: linear-gradient(90deg, #f7f7f7, #ff78bc, #88e1ff, #c281ff);
+    background-size: 300% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    animation: moveGradient 4s linear infinite;
+}
+@keyframes moveGradient {
+    0% {
+        background-position: 0% center;
+    }
+    100% {
+        background-position: 300% center;
+    }
+}
 .texto-superhero {
-    color: rgb(0, 0, 0);
-    /* border: 9px solid rgb(0, 0, 0); */
+    color: rgb(255, 255, 255);
     top: 50px;
     padding: 1rem;
     text-align: justify;
     font-size: large;
-    font-weight: bold;
+}
+.img-superhero {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
 }
