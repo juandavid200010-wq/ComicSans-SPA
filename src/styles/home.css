@@ -2,10 +2,12 @@
 .tittle{
     padding-top: 1.5rem;
 }
-main ul {
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
+
+.text-home{
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    text-align: justify;
+    padding: 1.10rem;
 }
 .video-marvel-inico {
     display: block;
@@ -36,7 +38,6 @@ main ul {
     /* border: 9px solid rgb(255, 0, 191); */
     width: 100%;
     height: 600px;      
-    object-fit: cover;
     border-radius: 20px;
     border: 2px solid rgba(255, 255, 255, 0.3);
 }
@@ -83,4 +84,52 @@ main ul {
 .gallery-superhero img:hover {
     transform: scale(1.5);
     border: 2px solid rgb(255, 255, 255, 0.7);
+}
+
+
+@media (min-width: 768px) {
+    .tittle{
+        padding-left: 2rem;
+    }
+    .text-home{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        font-size: 1.5rem;
+    }
+    .btn-start-chat {
+        left: 33%;
+        bottom: 30px;
+        font-size: 1.2rem;
+    }
+    .gallery-superhero img {
+        width: 150px;
+        height: 150px;
+    }
+    .gallery-superhero {
+        gap: 1.5rem;
+        bottom: 130px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container-all-superheroes{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem; 
+    }
+    .container-chat-superhero {
+        width: 100%;       
+        height: 300%;     
+        object-fit: cover; 
+        object-position: center;
+    }
+    .gallery-superhero {
+        border: 9px solid rgb(255, 0, 191);
+        display: none;
+    }
+    .btn-start-chat {
+        left: 20%;
+        bottom: 130px;
+        font-size: 1.1rem;
+    }
 }

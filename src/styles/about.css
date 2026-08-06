@@ -3,6 +3,13 @@
     justify-content: center;
     margin-top: 2rem;
 }
+.texto-about{
+    color: rgb(255, 255, 255);
+    top: 50px;
+    padding: 1rem;
+    text-align: justify;
+    font-size: large;
+}
 .name-superhero {
     background: linear-gradient(90deg, #f7f7f7, #ff78bc, #88e1ff, #c281ff);
     background-size: 300% auto;
@@ -31,4 +38,83 @@
     margin: 0 auto;
     max-width: 100%;
     height: auto;
+}
+
+@media (min-width: 768px) {
+    .tittle-about{
+        margin-top: 3rem;
+        font-size: 2rem;
+    }
+    .texto-superhero li {
+        margin-left: 2rem;
+    }
+    .name-superhero {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    .texto-superhero {
+        font-size: 1.5rem;
+        padding: 2rem;
+    }
+    .texto-about {
+        font-size: 1.5rem;
+        padding: 2rem;
+        margin-left: 2rem;
+    }
+    .contenedor-video {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .video-marvel-inico {
+        width: 100%;
+        height: 800px;
+        object-fit: cover;
+    }
+    img.img-superhero {
+        width: 95%;
+        height: 800px;
+        object-fit: cover;
+        object-position: top;
+    }
+}
+
+@media (min-width: 1024px) {
+    
+    .container-superhero {
+        /* border: 10px solid rgb(255, 0, 191); */
+        display: flex;
+        flex-flow: row wrap;
+        gap: 1rem;
+    }
+    .texto-superhero {
+        /* border: 10px solid rgb(255, 255, 0); */
+        width: 48%;
+    }
+    .texto-superhero-final {
+        /* border: 10px solid rgb(0, 255, 0); */
+        width: 100%;
+        color: rgb(255, 255, 255);
+        top: 50px;
+        padding: 2rem;
+        text-align: justify;
+        font-size: 24px;
+    }
+    .container-video {
+        /* border: 10px solid rgb(255, 0, 0); */
+        width: 50%;
+        padding-right: 1rem;
+    }
+    .video-superhero {
+        /* border: 10px solid rgb(21, 255, 0); */
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+    img.img-superhero {
+        /* border: 10px solid rgb(0, 47, 255); */
+        width: 50%;
+        height: 500px;
+        object-fit: cover;
+        padding-right: 1rem;
+    }
 }
