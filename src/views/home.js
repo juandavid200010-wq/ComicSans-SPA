@@ -1,3 +1,4 @@
+import { navigateTo } from '../router/router.js';
 
 export function renderHome() {
     const app = document.getElementById('app');
@@ -25,7 +26,7 @@ export function renderHome() {
 
     <section class = "container-all-superheroes">
         <div class = "container-chat-superhero">
-            <button class="btn-start-chat" type="button">Hablar con Deadpool</button>
+            <button class="btn-start-chat" type="button" data-character="deadpool">Hablar con Deadpool</button>
             <div class="gallery-superhero">
                 <img src="./src/assets/imagenes/deadpool1.jpg" alt="deadpool">
                 <img src="./src/assets/imagenes/deadpool2.jpg" alt="deadpool">
@@ -35,7 +36,7 @@ export function renderHome() {
         </div> 
 
         <div class = "container-chat-superhero">
-            <button class="btn-start-chat" type="button">Hablar con Wolverine</button>
+            <button class="btn-start-chat" type="button" data-character="wolverine">Hablar con Wolverine</button>
             <div class="gallery-superhero">
                 <img src="./src/assets/imagenes/wolverine1.jpg" alt="Wolverine">
                 <img src="./src/assets/imagenes/wolverine2.png" alt="Wolverine">
@@ -45,7 +46,7 @@ export function renderHome() {
         </div> 
 
         <div class = "container-chat-superhero">
-            <button class="btn-start-chat" type="button">Hablar con Venom</button>
+            <button class="btn-start-chat" type="button" data-character="venom">Hablar con Venom</button>
             <div class="gallery-superhero">
                 <img src="./src/assets/imagenes/venom.jpg" alt="Venom">
                 <img src="./src/assets/imagenes/venom2.jpg" alt="Venom">
@@ -55,4 +56,12 @@ export function renderHome() {
         </div> 
     </section>
         `;
+
+    const botones = document.querySelectorAll('.btn-start-chat');
+    botones.forEach(boton => {
+        boton.addEventListener('click', () => {
+            const personaje = boton.dataset.character;
+            navigateTo(`/chat/${personaje}`);
+        });
+    });
 }
