@@ -93,8 +93,8 @@ footer {
 
 /* Tablet */
 @media (min-width: 768px) {
-    header {
-        padding: 10px 50px;
+    .hero{
+        padding-left: 40px;
     }
     .logo {
         width: 50px;
@@ -102,17 +102,32 @@ footer {
     .menu-btn {
         font-size: 3rem;
     }
-    nav{
-        top: 10%;
-        right: 0;
-        height: 50%;
-        width: 100%;
+    nav {
+        position: static;
+        width: auto;
+        height: auto;
+        transform: none;
+        transition: none;
+        background: none;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        color: rgb(255, 255, 255);
+        gap: 1rem;
     }
     .logo-menu-despegable {
         display: none;
     }
     .close-btn {
-        padding-right: 2rem;
+        display: none;
+    }
+    .menu-btn {
+        display: none;
+    }
+    nav ul li a {
+    color: rgb(255, 255, 255);
+    font-size: 1.7rem;
     }
     footer {
         font-size: 1.2rem;
@@ -121,10 +136,31 @@ footer {
 }
 
 @media (min-width: 1024px) {
-    nav {
-        top: 0;
-        right: 0;
-        height: 100%;
-        width: 20%;
+    header{
+        padding: 0 50px;
     }
+    .menu-btn {
+        display: none;
+    }
+    .close-btn{
+        display: none;
+    }
+    nav {
+        position: static;
+        width: auto;
+        height: auto;
+        transform: none;
+        transition: none;
+        background: none;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        color: white;
+        gap: 1rem;
+    }
+    nav ul li a {
+        color: rgb(255, 255, 255);
+        font-size: 1.7rem;
+}
 }

@@ -16,7 +16,7 @@ export function renderHome() {
             disfruta conversaciones únicas con personajes inspirados en 
             el universo de Marvel.
         </p>
-        <h2>¿Qué puedes hacer? </h2>
+        <h2 class= "text-home">¿Qué puedes hacer? </h2>
         <ul class = "text-home">
             <li>Conversar, Habla con un superhéroe.</li>
             <li>Inteligencia Artificial, Obtén respuestas naturales.</li>

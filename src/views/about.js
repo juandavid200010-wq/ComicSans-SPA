@@ -16,7 +16,6 @@ export function renderAbout() {
     </section>
 
     <section class = "container-superheroes">
-       
             <h2 class = "name-superhero">Deadpool</h2>
             <div class="container-superhero">
             <p class = "texto-superhero"> Deadpool, Wade Winston Wilson, conocido en los círculos militares 
