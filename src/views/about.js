@@ -1,4 +1,4 @@
-
+import { navigateTo } from '../router/router.js';
 export function renderAbout() {
     document.querySelector('#app').innerHTML = `
     <section>   

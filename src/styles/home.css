@@ -118,7 +118,6 @@
         display: flex;
         flex-direction: row;
         gap: 2rem; 
-        border: 10px red solid;
     }
     .container-chat-superhero {
         position: relative;
@@ -126,7 +125,6 @@
         height: 300%;     
         object-fit: cover; 
         object-position: center;
-        border: 10px red solid;
     }
     .btn-start-chat {
         position: absolute;

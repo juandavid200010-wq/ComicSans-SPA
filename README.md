@@ -6,11 +6,23 @@ SPA (Single Page Application) que permite conversar con **Deadpool**, un persona
 
 ---
 
-## Personaje elegido: Deadpool (Wade Wilson)
+## Personajes disponibles
 
-El chatbot está construido para responder con la personalidad de **Deadpool**: sarcástico, irreverente, con humor negro y espontáneo, capaz de romper la cuarta pared ocasionalmente. Bajo esa fachada de payaso, también muestra un lado más sincero y empático cuando la conversación lo requiere (por ejemplo, si el usuario comparte algo personal o emocional).
+La aplicación permite elegir entre tres personajes, cada uno con una personalidad propia definida mediante su propio system prompt enviado a Gemini (ver `api/characters.js`):
 
-El comportamiento del personaje está definido mediante un *system prompt* enviado a Gemini en cada request, que establece su personalidad, forma de hablar, límites de tono y reglas de consistencia (ver `api/functions.js`).
+- **Deadpool** (Wade Wilson): sarcástico, irreverente, humor negro y espontáneo, capaz de romper la cuarta pared ocasionalmente. Bajo la fachada de payaso, muestra un lado más sincero y empático cuando la conversación lo requiere.
+- **Wolverine**: tono más serio y de pocas palabras, con un carácter fuerte y directo.
+- **Venom**: la voz del simbionte, con un tono más intenso y particular del personaje.
+
+## Cómo se elige el personaje
+
+1. Desde Home, cada personaje tiene su propia tarjeta con un botón ("Hablar con **Deadpool**", etc.) que lleva directo a su chat.
+2. Dentro de la vista de Chat, hay un panel lateral con tarjetas pequeñas de los tres personajes, para cambiar de uno a otro sin volver a Home.
+3. Al cambiar de personaje, la conversación se reinicia — cada chat empieza desde cero con el personaje seleccionado.
+
+Esto se logra con una ruta dinámica en el router (`/chat/:character`, por ejemplo `/chat/deadpool`, `/chat/wolverine`, `/chat/venom`), que la aplicación interpreta del lado del cliente sin recargar la página.
+
+
 
 ---
 
@@ -117,4 +129,4 @@ Durante el desarrollo se utilizó Claude (Anthropic) como asistente de programac
 - **Redacción del *system prompt* de Deadpool:** iteración sobre tono, personalidad y reglas de consistencia del personaje.
 - **Estructuración de tests unitarios:** separación de la lógica pura (manejo de datos) de la lógica de DOM, para permitir testear `addMessage` y `formatMessagesForGemini` con Vitest sin depender del navegador.
 
-Las decisiones finales de arquitectura, nombres de variables, y el contenido del *system prompt* fueron revisadas y ajustadas por el desarrollador antes de integrarlas al proyecto.
+Las decisiones finales de arquitectura, nombres de variables, y el contenido del *system prompt* fueron revisadas y ajustadas por el desarrollador antes de integrarlas al proyecto
